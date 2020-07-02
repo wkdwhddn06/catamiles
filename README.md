@@ -1,7 +1,9 @@
 # Catamiles
 
 Progress: 🌟 완료
+
 Tags: C, Game
+
 Art: 한국디지털미디어 고등학교 박건형
 
 No 외부 라이브러리(사운드는 제외 윈미디어 사용), Only C로 만들어진 게임입니다

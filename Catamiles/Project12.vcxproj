@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{92DF237A-7F91-4DBD-BF49-B78456EE141C}</ProjectGuid>
+    <RootNamespace>Catamiles</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Catamiles</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <StackReserveSize>104857600</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <StackReserveSize>104857600</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <StackReserveSize>104857600</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationSystem.h" />
+    <ClInclude Include="Arraylist.h" />
+    <ClInclude Include="CameraSystem.h" />
+    <ClInclude Include="ColiderSystem.h" />
+    <ClInclude Include="EnemySystem.h" />
+    <ClInclude Include="gameSystem.h" />
+    <ClInclude Include="GunSystem.h" />
+    <ClInclude Include="InventorySystem.h" />
+    <ClInclude Include="ItemSystem.h" />
+    <ClInclude Include="MainStruct.h" />
+    <ClInclude Include="MapSystem.h" />
+    <ClInclude Include="PlayerSystem.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ShootingSystem.h" />
+    <ClInclude Include="SoundSystem.h" />
+    <ClInclude Include="StageManager.h" />
+    <ClInclude Include="taskSystem.h" />
+    <ClInclude Include="uiSystem.h" />
+    <ClInclude Include="Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project12.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Desktop\assert_gun.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\assert_gun_image.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\assert_gun_item.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bean_gun.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bean_gun_image.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bean_gun_item.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\BR.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_5.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_6.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_7.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_8.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\continue.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_5.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_6.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_7.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_5.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_6.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_7.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\droni.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\droni_hited.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\gameover.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\heart_item.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_bullet.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_gun.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_gun_image.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_gun_item.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_left_down.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_left_up.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_right_down.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_right_up.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_tile.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_down.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_left.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_right.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_up.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\modern_bullet.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\New Piskel (4).bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\newitem.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player_move1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player_move2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player_move3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\quit.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\retry.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\speed_ring.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\start.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tile 2-2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tile 2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tilefloor.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tille top.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\titlescreen.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\wood_bullet.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\wood_gun.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\wood_gun_image.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\catsoldier.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tilefloor2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tille top D.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tille top LD.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tille top RD.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topL.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topLU.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topR.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topRU.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topU.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\capet bridge.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\capetL.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\capetside.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\edge.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\edge2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\tile u.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\tile.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top D.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top LD.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top LU.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top RD.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top RU.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top side.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\topL.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\topU.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\wall.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\wallbottom.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death10.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death11.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death5.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death6.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death7.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death8.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death9.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T114820Z-001\Mulchi Mov1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T114820Z-001\Mulchi Mov2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T114820Z-001\Mulchi Mov3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T115534Z-001\Mulchihurt1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T115534Z-001\Mulchihurt2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T115534Z-001\Mulchihurt3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title10.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title11.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title12.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title13.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title14.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title15.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title16.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title17.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title18.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title5.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title6.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title7.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title8.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title9.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T051758Z-001\iven1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T051758Z-001\iven2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062248Z-001\MiderdukMove1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062248Z-001\MiderdukMove2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062939Z-001\Miderdukhurt1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062939Z-001\Miderdukhurt2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062939Z-001\Miderdukhurt3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack5.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack6.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack7.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack8.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070611Z-001\Nup.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070611Z-001\Nup1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070611Z-001\Nup2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070625Z-001\Nuphurt1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070625Z-001\Nuphurt2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070625Z-001\Nuphurt3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\empty heart.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\Full heart.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\Heart.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\Miderduk.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\pause.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\stair.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\desktop\char\cursor1.cur" />
+    <None Include="..\..\..\..\Downloads\New-Piskel.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Desktop\test.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

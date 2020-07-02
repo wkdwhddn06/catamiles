@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일\player">
+      <UniqueIdentifier>{12a10bf2-5a57-4077-86d1-daed6f9001ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\GameEngine">
+      <UniqueIdentifier>{0c8b2890-718e-475f-b86f-69766161f1c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Util">
+      <UniqueIdentifier>{e0b65581-07dd-4616-8d7a-cec396d56301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\titleScreen">
+      <UniqueIdentifier>{dbb4ddd2-a360-4cdc-823d-8352c1751c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\enemy">
+      <UniqueIdentifier>{c541787b-46cf-4458-acee-91e2d1b27117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\enemy\droni">
+      <UniqueIdentifier>{db141bcf-a348-44e6-aece-62d77a10ff28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\bullet">
+      <UniqueIdentifier>{857855c0-a04b-4bfd-81d7-14a3cd599ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\bullet\red_bullet">
+      <UniqueIdentifier>{4a209c9b-ca29-4b87-80e9-90efb98dcaee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\enemy\droni\droni_idle">
+      <UniqueIdentifier>{4c2c6065-fe69-43c2-9afc-2ec1d58ae280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\enemy\droni\droni_death">
+      <UniqueIdentifier>{4d41cc03-7d93-4eec-9087-d4097c08da9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\map">
+      <UniqueIdentifier>{c2550359-7e03-43e3-bafa-b1458ea04b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\map\lab_test">
+      <UniqueIdentifier>{e4031774-ede4-4d90-8750-2ab48e6ff1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\map\dungeon_rock">
+      <UniqueIdentifier>{8617cc5a-6113-4fdf-99f8-ded3c296b45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\gun">
+      <UniqueIdentifier>{883581bf-0934-41e0-a91c-562afa5a8fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\interface">
+      <UniqueIdentifier>{69f21e35-cd31-4dd3-b6a5-cdc4a7237b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\map\dungeon_carpet">
+      <UniqueIdentifier>{943d93e1-c8f0-4614-8cb9-fe24868b1692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\enemy\mulchi">
+      <UniqueIdentifier>{7e85fb12-ac04-45ff-a0b9-cf4b868eb0fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\enemy\mideduk">
+      <UniqueIdentifier>{abe8e9c8-3c50-436e-ac16-d565fd0e329d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gameSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="uiSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>헤더 파일\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="taskSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="MainStruct.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Arraylist.h">
+      <Filter>헤더 파일\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemySystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GunSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootingSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="MapSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ColiderSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="StageManager.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="InventorySystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSystem.h">
+      <Filter>헤더 파일\GameEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project12.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Desktop\titlescreen.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\start.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\quit.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet.bmp">
+      <Filter>리소스 파일\bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\modern_bullet.bmp">
+      <Filter>리소스 파일\bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\droni.bmp">
+      <Filter>리소스 파일\enemy\droni</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_5.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_1.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_2.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_3.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_4.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_6.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_7.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bullet\red_bullet_ex_8.bmp">
+      <Filter>리소스 파일\bullet\red_bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\droni_hited.bmp">
+      <Filter>리소스 파일\enemy\droni</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_1.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_idle</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_2.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_idle</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_3.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_idle</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_4.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_idle</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_5.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_idle</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_6.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_idle</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\idle\droni_idle_7.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_idle</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_1.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_death</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_2.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_death</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_3.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_death</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_4.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_death</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_5.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_death</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_6.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_death</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\drone\death\drone_death_7.bmp">
+      <Filter>리소스 파일\enemy\droni\droni_death</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_up.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_left_down.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_left_up.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_right_down.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_cor_right_up.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_tile.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_down.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_left.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map_test\lab_wall_right.bmp">
+      <Filter>리소스 파일\map\lab_test</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player.bmp">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tille top.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tile 2-2.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tilefloor.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\tile 2.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topU.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topLU.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topR.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topRU.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T070010Z-001\tille topL.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tilefloor2.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tille top D.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tille top LD.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191115T065936Z-001\tille top RD.bmp">
+      <Filter>리소스 파일\map\dungeon_rock</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bean_gun.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bean_gun_image.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\bean_gun_item.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\Full heart.bmp">
+      <Filter>리소스 파일\interface</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\empty heart.bmp">
+      <Filter>리소스 파일\interface</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\tile u.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\tile.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top D.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top LD.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top LU.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top RD.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top RU.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\top side.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\topL.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\topU.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\wall.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\wallbottom.bmp">
+      <Filter>리소스 파일\map\dungeon_carpet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\pause.bmp">
+      <Filter>리소스 파일\interface</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\Heart.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\continue.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\catsoldier.bmp">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt1.bmp">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt2.bmp">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt3.bmp">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T033527Z-001\cat hurt4.bmp">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death1.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death2.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death3.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death4.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death5.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death6.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death7.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death8.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death9.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death10.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T113459Z-001\Death11.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T114820Z-001\Mulchi Mov3.bmp">
+      <Filter>리소스 파일\enemy\mulchi</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T114820Z-001\Mulchi Mov1.bmp">
+      <Filter>리소스 파일\enemy\mulchi</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T114820Z-001\Mulchi Mov2.bmp">
+      <Filter>리소스 파일\enemy\mulchi</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T115534Z-001\Mulchihurt3.bmp">
+      <Filter>리소스 파일\enemy\mulchi</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T115534Z-001\Mulchihurt1.bmp">
+      <Filter>리소스 파일\enemy\mulchi</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191118T115534Z-001\Mulchihurt2.bmp">
+      <Filter>리소스 파일\enemy\mulchi</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\assert_gun_item.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\assert_gun.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\assert_gun_image.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\New Piskel (4).bmp">
+      <Filter>리소스 파일\bullet</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\map.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player_move1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player_move2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\player\player_move3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\stair.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_gun_item.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_gun.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_gun_image.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\ice_bullet.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T051758Z-001\iven1.bmp">
+      <Filter>리소스 파일\interface</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T051758Z-001\iven2.bmp">
+      <Filter>리소스 파일\interface</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\BR.bmp">
+      <Filter>리소스 파일\map</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\capet bridge.bmp">
+      <Filter>리소스 파일\map</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\capetL.bmp">
+      <Filter>리소스 파일\map</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\capetside.bmp">
+      <Filter>리소스 파일\map</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\edge.bmp">
+      <Filter>리소스 파일\map</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191116T092752Z-001\edge2.bmp">
+      <Filter>리소스 파일\map</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title1.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title2.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title3.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title4.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title5.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title6.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title7.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title8.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title9.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title10.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title11.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title12.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title13.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title14.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title15.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title16.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title17.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191119T070310Z-001\title18.bmp">
+      <Filter>리소스 파일\titleScreen</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack1.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack2.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack3.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack4.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack5.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack6.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack7.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T063053Z-001\mider attack8.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\Miderduk.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062939Z-001\Miderdukhurt1.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062939Z-001\Miderdukhurt2.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062939Z-001\Miderdukhurt3.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062248Z-001\MiderdukMove1.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T062248Z-001\MiderdukMove2.bmp">
+      <Filter>리소스 파일\enemy\mideduk</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\gameover.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\retry.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\speed_ring.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070611Z-001\Nup.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070611Z-001\Nup1.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070611Z-001\Nup2.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070625Z-001\Nuphurt1.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070625Z-001\Nuphurt2.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\drive-download-20191122T070625Z-001\Nuphurt3.bmp">
+      <Filter>리소스 파일\enemy</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\wood_gun_image.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\wood_bullet.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\wood_gun.bmp">
+      <Filter>리소스 파일\gun</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\heart_item.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\newitem.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\New-Piskel.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\..\..\desktop\char\cursor1.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Desktop\test.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

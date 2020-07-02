@@ -21,10 +21,6 @@ void Shoot(HWND hWnd, HINSTANCE hInst, CAMERA * camera, GUN * gun, POINT shooter
 			StopSoundCUS(a);
 			PlaySoundCUS(gun->sound, a, 0);
 
-			//SOUND sound;
-			//ReadWaveFile(&sound, MAKEINTRESOURCE(IDR_WAVE1));
-			//PlayDSound(sound, hWnd);
-
 			POINT target = cursorPosition;
 			target.x += random(-gun->type.spread, gun->type.spread);
 			target.y += random(-gun->type.spread, gun->type.spread);

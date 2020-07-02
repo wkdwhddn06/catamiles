@@ -10,6 +10,7 @@ No 외부 라이브러리(사운드는 제외 윈미디어 사용), Only C로 �
 
 # Game Trailer
 
+![Catamiles ScreenShot](https://user-images.githubusercontent.com/33992757/86304393-ae3ba380-bc49-11ea-97ab-ad588dfe27f5.png)
 [https://www.youtube.com/watch?v=WplvZpNGx_4](https://www.youtube.com/watch?v=WplvZpNGx_4)
 
 게임에 관한 트레일러 입니다.
